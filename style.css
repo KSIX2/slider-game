@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+body{
+  margin: 0px;
+}
+
+h1{
+  font-size: 70px;
+  font-family: ZCOOL Kuaile;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: center;
+  align-self: center;
+}
+
+.layout{
+  width: 100vw;
+  height: 100vh;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px 50px 50px 320px 60px;
+  gap: 10px;
+  padding: 10px;
+}
+
+#gridbox {
+  height: 300px;
+  width: 300px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-start: 2;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  align-self: center;
+  justify-self: center;
+}
+
+.grids{
+  border: solid;
+  border-radius: 20px;
+  border-color: black;
+  margin: 1px;
+}
+
+#timer{
+  display: none;
+  font-family: ZCOOL KuaiLe, sans-serif;
+  width: 300px;
+  height: 30px;
+  background: black;
+  border: 3px solid black;
+  border-radius: 25px;
+  color: white;
+  font-size: 22px;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  text-align: center;
+  padding-top: 8px;
+  justify-self: center;
+  align-self: center;
+}
+
+#moveCount{
+  display: none;
+  font-family: ZCOOL KuaiLe, sans-serif;
+  width: 300px;
+  height: 30px;
+  background: black;
+  border: 3px solid black;
+  border-radius: 25px;
+  color: white;
+  font-size: 22px;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  text-align: center;
+  padding-top: 8px;
+  justify-self: center;
+  align-self: center;
+}
+
+.reset{
+  display: none;
+  width: 300px;
+  height: 50px;
+  grid-column-start: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#reset{
+  width: 300px;
+  height: 50px;
+  font-size: 22px;
+  font-family: ZCOOL KuaiLe, sans-serif;
+  background: gainsboro;
+  border: 3px solid black;
+  border-radius: 30px;
+  color: black;
+}
+
+#reset:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#piecebox{
+  height: 500px;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  align-self: center;
+  justify-self: center;
+  margin: 10px;
+}
+
+.piece{
+  border: solid;
+  border-radius: 20px;
+  border-color: black;
+  margin: 1px;
+}
+
+.difficultMode{
+  display: flex;
+  width: 300px;
+  height: 50px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#difficultMode{
+  width: 300px;
+  height: 50px;
+  font-size: 22px;
+  font-family: ZCOOL KuaiLe, sans-serif;
+  background: gainsboro;
+  border: 3px solid black;
+  border-radius: 30px;
+  color: black;
+}
+
+#difficultMode:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.easyMode{
+  display: flex;
+  width: 300px;
+  height: 50px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#easyMode{
+  width: 300px;
+  height: 50px;
+  font-size: 22px;
+  font-family: ZCOOL KuaiLe, sans-serif;
+  background: gainsboro;
+  border: 3px solid black;
+  border-radius: 30px;
+  color: black;
+}
+
+#easyMode:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#instructions{
+  height: 480px;
+  width: 900px;
+  font-family: ZCOOL KuaiLe;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  align-self: center;
+  justify-self: center;
+  font-size: 24px;
+  border: solid;
+  border-color: black;
+}
+
+h3{
+  font-size: 35px;
+  text-align: center;
+}
+
+video {
+  display: block;
+  width: 356px;
+  height: 200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#modal{
+  display: none;
+  width: 600px;
+  height: 450px;
+  border: solid;
+  border-color: black;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+  grid-row-start: 2;
+  font-family: ZCOOL KuaiLe;
+  text-align: center;
+  font-size: 22px; 
+  background: yellow;
+}
+
+#exit{
+  width: 150px;
+  height: 40px;
+  font-size: 22px;
+  font-family: ZCOOL KuaiLe, sans-serif;
+  background: gainsboro;
+  border: 3px solid black;
+  border-radius: 30px;
+  color: black;
+}
+
+#exit:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#playAgain{
+  width: 150px;
+  height: 40px;
+  font-size: 22px;
+  font-family: ZCOOL KuaiLe, sans-serif;
+  background: gainsboro;
+  border: 3px solid black;
+  border-radius: 30px;
+  color: black;
+}
+
+#playAgain:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
